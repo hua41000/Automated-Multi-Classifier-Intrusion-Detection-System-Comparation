@@ -22,12 +22,12 @@ The system is broken down into six sequential, highly modularized steps:
 *** Before and after the action of dropping redundant data, Heatmap comparison.
 <br>
 <img width="975" height="836" alt="image" src="https://github.com/user-attachments/assets/701065ce-752e-45f9-975d-2c05addebf10" />
-<br/>
 <br>
 After dropping highly correlated data
 <br>
 <img width="975" height="836" alt="image" src="https://github.com/user-attachments/assets/fc183a7c-6ed0-4084-9cc7-20a22198e893" />
 <br><br>
+
 ### 3. Exploratory Data Analysis (`eda_engine.py`)
 * **Functionality:** Computes Pearson correlation coefficients to uncover and visualize the statistical "behavioral signatures" distinguishing malicious traffic from normal operations.
 * **Mechanism:** Uses Seaborn and Matplotlib to render targeted visual intelligence.
