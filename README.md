@@ -23,7 +23,9 @@ The system is broken down into six sequential, highly modularized steps:
 
 <img width="975" height="836" alt="image" src="https://github.com/user-attachments/assets/701065ce-752e-45f9-975d-2c05addebf10" />
 
+
 After dropping highly correlated data
+
 <img width="975" height="836" alt="image" src="https://github.com/user-attachments/assets/fc183a7c-6ed0-4084-9cc7-20a22198e893" />
 
 ### 3. Exploratory Data Analysis (`eda_engine.py`)
