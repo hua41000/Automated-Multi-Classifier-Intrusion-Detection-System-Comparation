@@ -18,16 +18,16 @@ The system is broken down into six sequential, highly modularized steps:
 * **Functionality:** Sanitizes raw data by eliminating `NaN` and Infinity values, converts text labels using `LabelEncoder`, and normalizes mathematical scales using `MinMaxScaler` (binding features between 0 and 1).
 * **Mechanism:** Preserves explicit multi-class attack categories (e.g., DDoS, PortScan) to provide granular visibility into model blind spots.
 * **Optimization:** Implements a dynamic programmatic filter to automatically scan and drop network features exhibiting over 98% correlation. This eliminates multicollinearity, purging mathematically identical data to improve training speed and algorithm stability without sacrificing predictive power.
-
+<br>
 *** Before and after the action of dropping redundant data, Heatmap comparison.
-
+<br>
 <img width="975" height="836" alt="image" src="https://github.com/user-attachments/assets/701065ce-752e-45f9-975d-2c05addebf10" />
-
-
+<br/>
+<br>
 After dropping highly correlated data
-
+<br>
 <img width="975" height="836" alt="image" src="https://github.com/user-attachments/assets/fc183a7c-6ed0-4084-9cc7-20a22198e893" />
-
+<br><br>
 ### 3. Exploratory Data Analysis (`eda_engine.py`)
 * **Functionality:** Computes Pearson correlation coefficients to uncover and visualize the statistical "behavioral signatures" distinguishing malicious traffic from normal operations.
 * **Mechanism:** Uses Seaborn and Matplotlib to render targeted visual intelligence.
