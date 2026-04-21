@@ -4,7 +4,7 @@ from sklearn.model_selection import train_test_split
 def load_and_sample_data(filepath, sample_size=0.1):
     """
     Loads CICIDS2017 dataset and performs stratified sampling.
-    Fulfills Project 4 requirement for dataset selection and handling[cite: 25].
+    Fulfills Project 4 requirement for dataset selection and handling.
     """
     df = pd.read_csv(filepath)
     

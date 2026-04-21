@@ -18,7 +18,7 @@ def main():
     data_folder = "data/"
     output_base_dir = "outputs/"
     
-    # Identify all datasets (NSL-KDD, CICIDS, etc.) [cite: 17, 125]
+    # Identify all datasets (NSL-KDD, CICIDS, etc.) 
     dataset_paths = glob.glob(os.path.join(data_folder, "*.csv"))
     
     if not dataset_paths:
@@ -40,14 +40,14 @@ def main():
         print(f"\n{'='*50}")
 
         # 2. DATA LOADING & SAMPLING
-        # Implements the 10% sampling strategy for performance [cite: 119]
+        # Implements the 10% sampling strategy for performance 
         df, target_col = load_and_sample_data(path, sample_size=0.1)
         
         print("-> Cleaning Dataset...")
         df_clean, label_classes = clean_and_prepare_df(df, target_col=target_col)
 
         # 3. EXPLORATORY DATA ANALYSIS (EDA)
-        # Fulfills Project 4's deliverable for feature correlation studies [cite: 119, 127]
+        # Fulfills Project 4's deliverable for feature correlation studies 
         print("-> Generating EDA visualizations...")
         perform_eda(df_clean, output_path=dataset_output_dir, target_col="Label")
 
